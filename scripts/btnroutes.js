@@ -1,5 +1,5 @@
 const route = {
-    '/cotizar': '/pages/budget/cotizacion.html',
+    '/cotizar': '/xdntwebsite/pages/budget/cotizacion.html',
 };
 
 function loadPage(page) {

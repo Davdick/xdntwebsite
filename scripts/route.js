@@ -52,13 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Rutas de los archivos HTML
     const routes = {
         '/': 'index.html',
-        '/cotizar': '/pages/budget/cotizacion.html',
-        '/contact': 'contact.html'
+        '/cotizar': '/xdntwebsite/pages/budget/cotizacion.html'
     };
 
     // Página predeterminada
     //const defaultPage = '/pages/home/home.html';
-    const defaultPage ='/pages/home/home.html';
+    const defaultPage ='/xdntwebsite/pages/home/home.html';
     // Función para cargar el contenido de la ruta en el div
     function loadPage(page) {
         fetch(page)
@@ -119,6 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function cotweb() {
     
 
-    loadPage('/pages/budget/cotizacion.html');
+    loadPage('/xdntwebsite/pages/budget/cotizacion.html');
 }
 
