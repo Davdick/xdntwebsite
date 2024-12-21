@@ -1,50 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const content = document.getElementById("content");
 
-//     // Rutas de los archivos HTML
-//     const routes = {
-//         '/': 'index.html',        // Ruta para la página de inicio
-//         '/about': 'about.html',    // Ruta para la página "About"
-//         '/contact': 'contact.html' // Ruta para la página de contacto
-//     };
-
-//     // Página predeterminada
-//     const defaultPage = '/pages/home/home.html';
-
-//     // Función para cargar el contenido de la ruta en el div
-//     function loadPage(page) {
-//         fetch(page)
-//             .then(response => response.text())
-//             .then(html => {
-//                 content.innerHTML = html;
-//             })
-//             .catch(err => {
-//                 console.warn('Error cargando la página:', err);
-//                 content.innerHTML = '<h1>404 - Página no encontrada</h1>';
-//             });
-//     }
-
-//     // Manejar los clics en los enlaces
-//     document.querySelectorAll('.navbar a').forEach(link => {
-//         link.addEventListener('click', function(event) {
-//             event.preventDefault(); // Prevenir la acción predeterminada de recargar la página
-//             const path = this.getAttribute('href'); // Obtener el valor de href
-//             history.pushState({}, '', path); // Actualiza la URL sin recargar
-//             loadPage(routes[path] || defaultPage); // Cargar el contenido correspondiente, o la página predeterminada
-//         });
-//     });
-
-//     // Escuchar cambios en la URL (para cuando navegas con el botón de atrás o adelante)
-//     window.addEventListener('popstate', function() {
-//         loadPage(routes[window.location.pathname] || defaultPage); // Si no hay ruta, cargar la página predeterminada
-//     });
-
-//     // Si la ruta es exactamente la raíz ("/"), carga la página por defecto
-//     const currentPath = window.location.pathname === '/' ? '/index.html' : window.location.pathname;
-
-//     // Cargar la página inicial o la ruta actual
-//     loadPage(routes[currentPath] || defaultPage); // Si no coincide con ninguna ruta, cargar la página predeterminada
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const content = document.getElementById("content");
@@ -52,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Rutas de los archivos HTML
     const routes = {
         '/': 'index.html',
-        '/cotizar': '/xdntwebsite/pages/budget/cotizacion.html'
+        '/cotizar': '/pages/budget/cotizacion.html'
     };
 
     // Página predeterminada
     //const defaultPage = '/pages/home/home.html';
-    const defaultPage ='/xdntwebsite/pages/home/home.html';
+    const defaultPage ='/pages/home/home.html';
     // Función para cargar el contenido de la ruta en el div
     function loadPage(page) {
         fetch(page)
@@ -118,6 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function cotweb() {
     
 
-    loadPage('/xdntwebsite/pages/budget/cotizacion.html');
+    loadPage('/pages/budget/cotizacion.html');
 }
 
