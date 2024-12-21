@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Empresa de Desarrollo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><img src="/assets/xdntImage.png" width="150" height="120">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>XDN'Technologies</h1>
+            <h2>Innovación y Tecnología a tu Alcance</h2>
+            <p>Transformamos tus ideas en soluciones tecnológicas personalizadas.</p>
+            <a href="#contact" class="btn">Contáctanos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="services" class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web modernos y funcionales para tu negocio.</p>
+                    <button class="custom-button">Cotizar</button>
+                </div>
+                <div class="service-card">
+                    <h3>Apps Móviles</h3>
+                    <p>Aplicaciones móviles personalizadas para iOS y Android.</p>
+                    <button class="custom-button">Cotizar</button>
+                </div>
+                <div class="service-card">
+                    <h3>E-commerce</h3>
+                    <p>Soluciones personalizadas para crear tu tienda online y optimizar la experiencia de compra de tus clientes.</p>
+                    <button class="custom-button">Cotizar</button>
+                </div>
+                <div class="service-card">
+                    <h3>Aplicaciones empresariales</h3>
+                    <p>Desarrollamos aplicaciones que optimizan los procesos internos y mejoran la productividad de tu empresa.</p>
+                    <button class="custom-button">Cotizar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" style=" padding: 40px 20px; border-radius: 8px; max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center;  margin-bottom: 20px;">Sobre Nosotros</h2>
+            <p style="text-align: center; font-size: 1.2rem; line-height: 1.6; margin-bottom: 40px;">
+              En XDN'Technologies, somos apasionados por la tecnología y el desarrollo de software. Ayudamos a empresas a alcanzar su máximo potencial con herramientas tecnológicas de alta calidad.
+            </p>
+            
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+              <!-- Misión -->
+              <div class="about-card1"  style="flex: 1 1 45%;background-color:  #222222 ;padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: #00ccff">Misión</h3>
+                <p style="font-size: 1.1rem; line-height: 1.6; ">
+                  En XDN'Technologies, nos dedicamos a desarrollar soluciones de software personalizadas que satisfagan las necesidades de nuestros clientes, impulsando su éxito con tecnología de vanguardia, un enfoque centrado en el usuario y un compromiso constante con la excelencia.
+                </p>
+              </div>
+          
+              <!-- Visión -->
+              <div class="about-card2" style="flex: 1 1 45%; background-color:#222222; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: #00ccff">Visión</h3>
+                <p style="font-size: 1.1rem; line-height: 1.6; ">
+                  Ser líderes en innovación tecnológica, proporcionando soluciones de software de alta calidad que transformen y optimicen los negocios de nuestros clientes, contribuyendo al crecimiento y evolución de la industria tecnológica a nivel global.
+                </p>
+              </div>
+            </div>
+          </section>
+          
+
+        <section id="contact" class="contact">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <ul>
+                
+                    <li> <a href="mailto:xdntechnologies@hotmail.com"><i class="fas fa-envelope"></i> xdntechnologies@hotmail.com</a></li>
+                    <li><a href="https://www.facebook.com/people/Desarrollo-de-Software-XDNT/61570581038316" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://wa.me/524491910596" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+                  
+              </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 XDN'Technologies. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

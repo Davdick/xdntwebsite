@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Asegúrate de vincular tu archivo CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="/" class="btn">Volver al inicio</a>
+        <h1>Cotización</h1>
+    </header>
+
+
+    
+    <!-- Formulario de cotización -->
+    <section class="services">
+        <h2>Solicita tu cotización</h2>
+        <p>Completa el siguiente formulario para recibir una cotización personalizada.</p>
+
+        <form class="contact-form" id="cotizacion-form">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+            <label for="servicio">Servicio requerido:</label>
+            <select id="servicio" name="servicio" class="custom-select" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="desarrollo-web">Plataforma web</option>
+                <option value="consultoria">Aplicación móvil</option>
+                <option value="soporte">E-commerce</option>
+                <option value="soporte">Aplicación empresarial</option>
+            </select>
+
+            <label for="mensaje">Detalles adicionales:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe tus necesidades"></textarea>
+
+            <button type="submit" class="btn">Solicitar cotización</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Tu Empresa - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Simulación de envío del formulario
+        document.getElementById('cotizacion-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('¡Gracias por tu solicitud! Nos pondremos en contacto contigo pronto.');
+        });
+    </script>
+</body>
+</html>
+<style>
+    .header a{
+        font-size: 1.8em;   /* Aumenta el tamaño del texto */
+    }
+     /* Estilos para el select */
+     .custom-select {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        border: 2px solid #333333;
+        border-radius: 5px;
+        background-color: #222222;
+        color: #ffffff;
+        outline: none;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .custom-select:focus {
+        background-color: #444444;
+        border-color: #00ccff;
+        color: #ffffff;
+    }
+
+    .custom-select option {
+        background-color: #222222;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    .custom-select option:hover {
+        background-color: #333333;
+    }
+
+    label {
+        font-size: 1.2rem;
+        color: #ffffff;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    /* Opcional: hacer que el select sea más pequeño en dispositivos móviles */
+    @media (max-width: 768px) {
+        .custom-select {
+            font-size: 0.9rem;
+        }
+    }
+</style>

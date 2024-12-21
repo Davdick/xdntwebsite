@@ -1,0 +1,25 @@
+.custom-button {
+    background-color: #222222; /* Negro elegante */
+    color: #00bcd4; /* Azul neón del logo */
+    border: 2px solid #00bcd4; /* Borde azul */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    padding: 12px 24px; /* Botón más espacioso */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  .custom-button:hover {
+    background-color: #00bcd4; /* Fondo azul neón al pasar el cursor */
+    color: #222222; /* Texto negro elegante */
+    border-color: #00bcd4; /* Mantiene el color del borde */
+    transform: translateY(-3px); /* Efecto de levantar ligeramente */
+  }
+  
+  .custom-button:active {
+    background-color: #0288a6; /* Azul más oscuro al hacer clic */
+    transform: translateY(1px); /* Botón ligeramente presionado */
+  }
+  
